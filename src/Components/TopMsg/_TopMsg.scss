@@ -1,0 +1,31 @@
+#top-msg .top-msg-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(234, 234, 234);
+  background-color: rgb(255, 65, 65);
+  padding: 0.5rem 0;
+  opacity: 0;
+  animation: top-msg-intro 0.7s ease forwards 1.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+@keyframes top-msg-intro {
+  to {
+    opacity: 1;
+    position: relative;
+  }
+}
+
+#top-msg p {
+  font-size: 0.8rem;
+  line-height: calc(0.8rem * 1.5);
+  text-align: center;
+}

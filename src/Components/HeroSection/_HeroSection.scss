@@ -1,0 +1,54 @@
+#hero .img {
+  transform: translateY(+50%) scale(0.7);
+  opacity: 0.5;
+  animation: hero-img-intro 0.8s ease-out forwards;
+}
+@keyframes hero-img-intro {
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+#hero .section-title {
+  opacity: 0;
+  width: max-content;
+  transform: translateX(200px);
+  transform-origin: right;
+  animation: hero-title-intro 0.8s ease-out forwards 0.5s;
+}
+
+@keyframes hero-title-intro {
+  to {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+#hero .page-heading,
+#hero p {
+  opacity: 0;
+  transform: translateX(-200px);
+  transform-origin: left;
+  animation: hero-text-intro 0.8s ease-out forwards 0.5s;
+}
+
+@keyframes hero-text-intro {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#hero .btn {
+  opacity: 0;
+  transform: translateY(200px);
+  animation: hero-btn-intro 0.8s ease-out forwards 0.5s;
+}
+@keyframes hero-btn-intro {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
