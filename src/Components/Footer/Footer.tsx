@@ -7,9 +7,7 @@ export default function Footer() {
       <div className="content">
         <div className="container">
           <div className="row2">
-            <p>
-              <p>&copy; 2022 Mystify. All rights reserved.</p>
-            </p>
+            <p>&copy; 2022 Mystify. All rights reserved.</p>
           </div>
         </div>
       </div>
