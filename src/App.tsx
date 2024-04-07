@@ -10,9 +10,11 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    const randomNum = Math.floor(Math.random() * 5) + 1;
+
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, randomNum * 1000);
   }, []);
 
   if (isLoading) {
