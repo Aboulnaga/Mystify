@@ -1,0 +1,50 @@
+/* HTML: <div class="loader"></div> */
+.loader-container {
+  position: fixed;
+  inset: 0;
+
+  background: var(--clr-neutral-100);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .main-logo {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 700;
+      color: var(--clr-accent-400);
+    }
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+.loader {
+  height: 45px;
+  aspect-ratio: 1.2;
+  --c: no-repeat repeating-linear-gradient(90deg, #59e89c 0 20%, #0000 0 40%);
+  background: var(--c) 50% 0, var(--c) 50% 100%;
+  background-size: calc(500% / 6) 50%;
+  animation: l10 1s infinite linear;
+}
+@keyframes l10 {
+  33% {
+    background-position: 0 0, 100% 100%;
+  }
+  66% {
+    background-position: 0 100%, 100% 0;
+  }
+  100% {
+    background-position: 50% 100%, 50% 0;
+  }
+}
